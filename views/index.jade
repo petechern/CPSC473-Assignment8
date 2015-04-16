@@ -1,0 +1,18 @@
+html
+	head
+		title Assignment 7
+	body
+		form(method='post', action='/')
+			label URL 
+			input(name='url' type='text')
+			input(type='submit')
+			p=message
+			h2 top ten
+			table
+				tr
+					th shorten url
+					th visited
+				each url, index in topten
+					tr
+						td=url.shortLink 
+						td=url.count
